@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fruit.css">
+   
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center"><b>Fruits</b></h1>
+        
+        <div class="row">
+            <!-- Apple -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="apple.png" class="card-img-top" alt="Apple">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple</h5>
+                        <p><strong>Color:</strong> Red, Green, Yellow</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹80 per kg</p>
+                        <button onclick="addToCart('Apple', 80)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banana -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="banana.png" class="card-img-top" alt="Banana">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana</h5>
+                        <p><strong>Color:</strong> Yellow</p>
+                        <p><strong>Taste:</strong> Sweet</p>
+                        <p><strong>Price:</strong> ₹30 per dozen</p>
+                        <button onclick="addToCart('Banana', 30)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orange -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="orange.png" class="card-img-top" alt="Orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Orange</h5>
+                        <p><strong>Color:</strong> Orange</p>
+                        <p><strong>Taste:</strong> Sweet, Tangy</p>
+                        <p><strong>Price:</strong> ₹50 per kg</p>
+                        <button onclick="addToCart('Orange', 50)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mango -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="mango.png" class="card-img-top" alt="Mango">
+                    <div class="card-body">
+                        <h5 class="card-title">Mango</h5>
+                        <p><strong>Color:</strong> Yellow, Green, Red</p>
+                        <p><strong>Taste:</strong> Sweet</p>
+                        <p><strong>Price:</strong> ₹100 per kg</p>
+                        <button onclick="addToCart('Mango', 100)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pineapple -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="pine.png" class="card-img-top" alt="Pineapple">
+                    <div class="card-body">
+                        <h5 class="card-title">Pineapple</h5>
+                        <p><strong>Color:</strong> Yellow</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹60 per piece</p>
+                        <button onclick="addToCart('Pineapple', 60)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Watermelon -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="watermelone.png" class="card-img-top" alt="Watermelon">
+                    <div class="card-body">
+                        <h5 class="card-title">Watermelon</h5>
+                        <p><strong>Color:</strong> Green, Red</p>
+                        <p><strong>Taste:</strong> Sweet</p>
+                        <p><strong>Price:</strong> ₹20 per kg</p>
+                        <button onclick="addToCart('Watermelon', 20)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guava -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="guava.png" class="card-img-top" alt="Guava">
+                    <div class="card-body">
+                        <h5 class="card-title">Guava</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Sweet, Tangy</p>
+                        <p><strong>Price:</strong> ₹40 per kg</p>
+                        <button onclick="addToCart('Guava', 40)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kiwi -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="kiwi.png" class="card-img-top" alt="Kiwi">
+                    <div class="card-body">
+                        <h5 class="card-title">Kiwi</h5>
+                        <p><strong>Color:</strong> Brown, Green</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹70 per kg</p>
+                        <button onclick="addToCart('Kiwi', 70)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strawberry -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="strawberry.png" class="card-img-top" alt="Strawberry">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry</h5>
+                        <p><strong>Color:</strong> Red</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹120 per kg</p>
+                        <button onclick="addToCart('Strawberry', 120)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lemon -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="lemon.png" class="card-img-top" alt="Lemon">
+                    <div class="card-body">
+                        <h5 class="card-title">Lemon</h5>
+                        <p><strong>Color:</strong> Yellow</p>
+                        <p><strong>Taste:</strong> Sour</p>
+                        <p><strong>Price:</strong> ₹25 per kg</p>
+                        <button onclick="addToCart('Lemon', 25)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Papaya -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="papaya.png" class="card-img-top" alt="Papaya">
+                    <div class="card-body">
+                        <h5 class="card-title">Papaya</h5>
+                        <p><strong>Color:</strong> Orange</p>
+                        <p><strong>Taste:</strong> Sweet</p>
+                        <p><strong>Price:</strong> ₹35 per kg</p>
+                        <button onclick="addToCart('Papaya', 35)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grape -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="grapes.png" class="card-img-top" alt="Grape">
+                    <div class="card-body">
+                        <h5 class="card-title">Grape</h5>
+                        <p><strong>Color:</strong> Green, Red, Black</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹90 per kg</p>
+                        <button onclick="addToCart('Grape', 90)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cherry -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="chreey.png" class="card-img-top" alt="Cherry">
+                    <div class="card-body">
+                        <h5 class="card-title">Cherry</h5>
+                        <p><strong>Color:</strong> Red</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹150 per kg</p>
+                        <button onclick="addToCart('Cherry', 150)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Peach -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="Peach.png" class="card-img-top" alt="Peach">
+                    <div class="card-body">
+                        <h5 class="card-title">Peach</h5>
+                        <p><strong>Color:</strong> Yellow, Red</p>
+                        <p><strong>Taste:</strong> Sweet</p>
+                        <p><strong>Price:</strong> ₹80 per kg</p>
+                        <button onclick="addToCart('Peach', 80)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pear -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="Pear.png" class="card-img-top" alt="Pear">
+                    <div class="card-body">
+                        <h5 class="card-title">Pear</h5>
+                        <p><strong>Color:</strong> Green, Red</p>
+                        <p><strong>Taste:</strong> Sweet, Juicy</p>
+                        <p><strong>Price:</strong> ₹70 per kg</p>
+                        <button onclick="addToCart('Pear', 70)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plum -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="plum.png" class="card-img-top" alt="Plum">
+                    <div class="card-body">
+                        <h5 class="card-title">Plum</h5>
+                        <p><strong>Color:</strong> Red, Purple</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹60 per kg</p>
+                        <button onclick="addToCart('Plum', 60)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apricot -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="Apricot.png" class="card-img-top" alt="Apricot">
+                    <div class="card-body">
+                        <h5 class="card-title"Apricot></h5>
+                        <p><strong>Color:</strong> Orange, Yellow</p>
+                        <p><strong>Taste:</strong> Sweet, Juicy</p>
+                        <p><strong>Price:</strong> ₹100 per kg</p>
+                        <button onclick="addToCart('Apricot', 100)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lychee -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="Lychee.png" class="card-img-top" alt="Lychee">
+                    <div class="card-body">
+                        <h5 class="card-title">Lychee</h5>
+                        <p><strong>Color:</strong> Red, Pink</p>
+                        <p><strong>Taste:</strong> Sweet, Floral</p>
+                        <p><strong>Price:</strong> ₹120 per kg</p>
+                        <button onclick="addToCart('Lychee', 120)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Raspberry -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="Raspberry.png" class="card-img-top" alt="Raspberry">
+                    <div class="card-body">
+                        <h5 class="card-title">Raspberry</h5>
+                        <p><strong>Color:</strong> Red</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹150 per kg</p>
+                        <button onclick="addToCart('Raspberry', 150)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blueberry -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="blueberry.png" class="card-img-top" alt="Blueberry">
+                    <div class="card-body">
+                        <h5 class="card-title">Blueberry</h5>
+                        <p><strong>Color:</strong> Blue, Purple</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹120 per kg</p>
+                        <button onclick="addToCart('Blueberry', 120)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cranberry -->
+            <div class="col-md-4 mb-4">
+                <div class="card fruit-card">
+                    <img src="cranberry.png" class="card-img-top" alt="Cranberry">
+                    <div class="card-body">
+                        <h5 class="card-title">Cranberry</h5>
+                        <p><strong>Color:</strong> Red</p>
+                        <p><strong>Taste:</strong> Tart</p>
+                        <p><strong>Price:</strong> ₹80 per kg</p>
+                        <button onclick="addToCart('Cranberry', 80)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shopping Cart -->
+        <center>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2 class="card-title">Shopping Cart</h2>
+                <ul id="cart-items" class="list-group">
+                </ul>
+                <p>Total: <span id="cart-total">0</span></p>
+                <button onclick="checkout()" class="btn btn-success">Checkout</button>
+            </div>
+        </div>
+    </center>
+    </div>
+     
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                       
+                    </div>
+                   
+                   
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        let cartItems = [];
+        let total = 0;
+        
+        function addToCart(itemName, price) {
+            cartItems.push({ name: itemName, price: price });
+            updateCart();
+        }
+        
+        function updateCart() {
+            let cartList = document.getElementById("cart-items");
+            cartList.innerHTML = "";
+            total = 0;
+        
+            cartItems.forEach(item => {
+                let listItem = document.createElement("li");
+                listItem.className = "list-group-item";
+                listItem.innerText = `${item.name} - ₹${item.price}`;
+                cartList.appendChild(listItem);
+                total += item.price;
+            });
+        
+            document.getElementById("cart-total").innerText = total;
+        }
+        
+        function checkout() {
+            alert(`Total Amount: ₹${total}`);
+            cartItems = [];
+            updateCart();
+        }
+    </script>
+
+</body>
+</html>

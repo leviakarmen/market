@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="veg.css">
+   
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center"><b>Vegetables</b></h1>
+        
+        <div class="row">
+            <!-- Tomato -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="tomato.png" class="card-img-top" alt="Tomato">
+                    <div class="card-body">
+                        <h5 class="card-title">Tomato</h5>
+                        <p><strong>Color:</strong> Red</p>
+                        <p><strong>Taste:</strong> Sweet, Tart</p>
+                        <p><strong>Price:</strong> ₹40 per kg</p>
+                        <button onclick="addToCart('Tomato', 40)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Potato -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="potato.png" class="card-img-top" alt="Potato">
+                    <div class="card-body">
+                        <h5 class="card-title">Potato</h5>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Taste:</strong> Starchy</p>
+                        <p><strong>Price:</strong> ₹30 per kg</p>
+                        <button onclick="addToCart('Potato', 30)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carrot -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="carrot.png" class="card-img-top" alt="Carrot">
+                    <div class="card-body">
+                        <h5 class="card-title">Carrot</h5>
+                        <p><strong>Color:</strong> Orange</p>
+                        <p><strong>Taste:</strong> Sweet</p>
+                        <p><strong>Price:</strong> ₹50 per kg</p>
+                        <button onclick="addToCart('Carrot', 50)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Onion -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="onion.png" class="card-img-top" alt="Onion">
+                    <div class="card-body">
+                        <h5 class="card-title">Onion</h5>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Taste:</strong> Pungent</p>
+                        <p><strong>Price:</strong> ₹35 per kg</p>
+                        <button onclick="addToCart('Onion', 35)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spinach -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="spinach.png" class="card-img-top" alt="Spinach">
+                    <div class="card-body">
+                        <h5 class="card-title">Spinach</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Mild, Earthy</p>
+                        <p><strong>Price:</strong> ₹20 per kg</p>
+                        <button onclick="addToCart('Spinach', 20)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cauliflower -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="cauliflower.png" class="card-img-top" alt="Cauliflower">
+                    <div class="card-body">
+                        <h5 class="card-title">Cauliflower</h5>
+                        <p><strong>Color:</strong> White</p>
+                        <p><strong>Taste:</strong> Mild</p>
+                        <p><strong>Price:</strong> ₹40 per kg</p>
+                        <button onclick="addToCart('Cauliflower', 40)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cucumber -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="cucumber.png" class="card-img-top" alt="Cucumber">
+                    <div class="card-body">
+                        <h5 class="card-title">Cucumber</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Refreshing</p>
+                        <p><strong>Price:</strong> ₹25 per kg</p>
+                        <button onclick="addToCart('Cucumber', 25)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bell Pepper -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="bellpepper.png" class="card-img-top" alt="Bell Pepper">
+                    <div class="card-body">
+                        <h5 class="card-title">Bell Pepper</h5>
+                        <p><strong>Color:</strong> Green, Red, Yellow</p>
+                        <p><strong>Taste:</strong> Sweet, Crunchy</p>
+                        <p><strong>Price:</strong> ₹60 per kg</p>
+                        <button onclick="addToCart('Bell Pepper', 60)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Broccoli -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="broccoli.png" class="card-img-top" alt="Broccoli">
+                    <div class="card-body">
+                        <h5 class="card-title">Broccoli</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Earthy, Crisp</p>
+                        <p><strong>Price:</strong> ₹45 per kg</p>
+                        <button onclick="addToCart('Broccoli', 45)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pumpkin -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="pumpkin.png" class="card-img-top" alt="Pumpkin">
+                    <div class="card-body">
+                        <h5 class="card-title">Pumpkin</h5>
+                        <p><strong>Color:</strong> Orange</p>
+                        <p><strong>Taste:</strong> Sweet, Nutty</p>
+                        <p><strong>Price:</strong> ₹30 per kg</p>
+                        <button onclick="addToCart('Pumpkin', 30)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eggplant -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="eggplant.png" class="card-img-top" alt="Eggplant">
+                    <div class="card-body">
+                        <h5 class="card-title">Eggplant</h5>
+                        <p><strong>Color:</strong> Purple</p>
+                        <p><strong>Taste:</strong> Mild, Spongy</p>
+                        <p><strong>Price:</strong> ₹35 per kg</p>
+                        <button onclick="addToCart('Eggplant', 35)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beetroot -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="beetroot.png" class="card-img-top" alt="Beetroot">
+                    <div class="card-body">
+                        <h5 class="card-title">Beetroot</h5>
+                        <p><strong>Color:</strong> Red</p>
+                        <p><strong>Taste:</strong> Sweet, Earthy</p>
+                        <p><strong>Price:</strong> ₹50 per kg</p>
+                        <button onclick="addToCart('Beetroot', 50)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garlic -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="garlic.png" class="card-img-top" alt="Garlic">
+                    <div class="card-body">
+                        <h5 class="card-title">Garlic</h5>
+                        <p><strong>Color:</strong> White</p>
+                        <p><strong>Taste:</strong> Pungent</p>
+                        <p><strong>Price:</strong> ₹60 per kg</p>
+                        <button onclick="addToCart('Garlic', 60)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ginger -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="ginger.png" class="card-img-top" alt="Ginger">
+                    <div class="card-body">
+                        <h5 class="card-title">Ginger</h5>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Taste:</strong> Spicy, Earthy</p>
+                        <p><strong>Price:</strong> ₹70 per kg</p>
+                        <button onclick="addToCart('Ginger', 70)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Green Peas -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="greenpeas.png" class="card-img-top" alt="Green Peas">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Peas</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Sweet, Starchy</p>
+                        <p><strong>Price:</strong> ₹55 per kg</p>
+                        <button onclick="addToCart('Green Peas', 55)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ladyfinger -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="ladyfinger.png" class="card-img-top" alt="Ladyfinger">
+                    <div class="card-body">
+                        <h5 class="card-title">Ladyfinger</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Mild, Crisp</p>
+                        <p><strong>Price:</strong> ₹45 per kg</p>
+                        <button onclick="addToCart('Ladyfinger', 45)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mushroom -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="mushroom.png" class="card-img-top" alt="Mushroom">
+                    <div class="card-body">
+                        <h5 class="card-title">Mushroom</h5>
+                        <p><strong>Color:</strong> White, Brown</p>
+                        <p><strong>Taste:</strong> Earthy</p>
+                        <p><strong>Price:</strong> ₹80 per kg</p>
+                        <button onclick="addToCart('Mushroom', 80)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Radish -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="radish.png" class="card-img-top" alt="Radish">
+                    <div class="card-body">
+                        <h5 class="card-title">Radish</h5>
+                        <p><strong>Color:</strong> Red, White</p>
+                        <p><strong>Taste:</strong> Peppery, Crisp</p>
+                        <p><strong>Price:</strong> ₹30 per kg</p>
+                        <button onclick="addToCart('Radish', 30)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sweet Potato -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="sweetpotato.png" class="card-img-top" alt="Sweet Potato">
+                    <div class="card-body">
+                        <h5 class="card-title">Sweet Potato</h5>
+                        <p><strong>Color:</strong> Orange, Purple</p>
+                        <p><strong>Taste:</strong> Sweet, Nutty</p>
+                        <p><strong>Price:</strong> ₹50 per kg</p>
+                        <button onclick="addToCart('Sweet Potato', 50)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Turnip -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="turnip.png" class="card-img-top" alt="Turnip">
+                    <div class="card-body">
+                        <h5 class="card-title">Turnip</h5>
+                        <p><strong>Color:</strong> White, Purple</p>
+                        <p><strong>Taste:</strong> Sweet, Peppery</p>
+                        <p><strong>Price:</strong> ₹40 per kg</p>
+                        <button onclick="addToCart('Turnip', 40)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zucchini -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="zucchini.png" class="card-img-top" alt="Zucchini">
+                    <div class="card-body">
+                        <h5 class="card-title">Zucchini</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Mild, Crisp</p>
+                        <p><strong>Price:</strong> ₹35 per kg</p>
+                        <button onclick="addToCart('Zucchini', 35)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asparagus -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="asparagus.png" class="card-img-top" alt="Asparagus">
+                    <div class="card-body">
+                        <h5 class="card-title">Asparagus</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Earthy, Bitter</p>
+                        <p><strong>Price:</strong> ₹70 per kg</p>
+                        <button onclick="addToCart('Asparagus', 70)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artichoke -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="artichoke.png" class="card-img-top" alt="Artichoke">
+                    <div class="card-body">
+                        <h5 class="card-title">Artichoke</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Nutty, Mild</p>
+                        <p><strong>Price:</strong> ₹80 per kg</p>
+                        <button onclick="addToCart('Artichoke', 80)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brussels Sprout -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="brusselssprout.png" class="card-img-top" alt="Brussels Sprout">
+                    <div class="card-body">
+                        <h5 class="card-title">Brussels Sprout</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Nutty, Sweet</p>
+                        <p><strong>Price:</strong> ₹60 per kg</p>
+                        <button onclick="addToCart('Brussels Sprout', 60)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Celery -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="celery.png" class="card-img-top" alt="Celery">
+                    <div class="card-body">
+                        <h5 class="card-title">Celery</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Crisp, Bitter</p>
+                        <p><strong>Price:</strong> ₹45 per kg</p>
+                        <button onclick="addToCart('Celery', 45)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leek -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="leek.png" class="card-img-top" alt="Leek">
+                    <div class="card-body">
+                        <h5 class="card-title">Leek</h5>
+                        <p><strong>Color:</strong> Green, White</p>
+                        <p><strong>Taste:</strong> Mild, Onion-like</p>
+                        <p><strong>Price:</strong> ₹50 per kg</p>
+                        <button onclick="addToCart('Leek', 50)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Parsnip -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="parsnip.png" class="card-img-top" alt="Parsnip">
+                    <div class="card-body">
+                        <h5 class="card-title">Parsnip</h5>
+                        <p><strong>Color:</strong> Creamy White</p>
+                        <p><strong>Taste:</strong> Sweet, Earthy</p>
+                        <p><strong>Price:</strong> ₹60 per kg</p>
+                        <button onclick="addToCart('Parsnip', 60)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Peppers -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="peppers.png" class="card-img-top" alt="Peppers">
+                    <div class="card-body">
+                        <h5 class="card-title">Peppers</h5>
+                        <p><strong>Color:</strong> Various</p>
+                        <p><strong>Taste:</strong> Sweet, Mild</p>
+                        <p><strong>Price:</strong> ₹70 per kg</p>
+                        <button onclick="addToCart('Peppers', 70)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rhubarb -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="rhubarb.png" class="card-img-top" alt="Rhubarb">
+                    <div class="card-body">
+                        <h5 class="card-title">Rhubarb</h5>
+                        <p><strong>Color:</strong> Pink, Red</p>
+                        <p><strong>Taste:</strong> Tart, Tangy</p>
+                        <p><strong>Price:</strong> ₹80 per kg</p>
+                        <button onclick="addToCart('Rhubarb', 80)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Squash -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="squash.png" class="card-img-top" alt="Squash">
+                    <div class="card-body">
+                        <h5 class="card-title">Squash</h5>
+                        <p><strong>Color:</strong> Yellow</p>
+                        <p><strong>Taste:</strong> Sweet, Nutty</p>
+                        <p><strong>Price:</strong> ₹40 per kg</p>
+                        <button onclick="addToCart('Squash', 40)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sweetcorn -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="sweetcorn.png" class="card-img-top" alt="Sweetcorn">
+                    <div class="card-body">
+                        <h5 class="card-title">Sweetcorn</h5>
+                        <p><strong>Color:</strong> Yellow</p>
+                        <p><strong>Taste:</strong> Sweet</p>
+                        <p><strong>Price:</strong> ₹50 per kg</p>
+                        <button onclick="addToCart('Sweetcorn', 50)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Watercress -->
+            <div class="col-md-4 mb-4">
+                <div class="card vegetable-card">
+                    <img src="watercress.png" class="card-img-top" alt="Watercress">
+                    <div class="card-body">
+                        <h5 class="card-title">Watercress</h5>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Taste:</strong> Peppery, Nutty</p>
+                        <p><strong>Price:</strong> ₹55 per kg</p>
+                        <button onclick="addToCart('Watercress', 55)" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+      
+        <center>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h2 class="card-title">Shopping Cart</h2>
+                    <ul id="cart-items" class="list-group">
+                    </ul>
+                    <p>Total: <span id="cart-total">0</span></p>
+                    <button onclick="checkout()" class="btn btn-success">Checkout</button>
+                </div>
+            </div>
+        </center>
+       
+    </div>
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                       
+                    </div>
+                   
+                   
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="veg.js"></script>
+</body>
+</html>
